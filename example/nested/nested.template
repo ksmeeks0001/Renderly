@@ -1,0 +1,13 @@
+<%inherit file="../layout.master"/>
+
+<%def name="title()">
+    Nested Page
+</%def>
+
+<%def name="header()">
+    <h1>Nested Page</h1>
+</%def>
+
+<%def name="content()">
+    <p>This is the home page content.</p>
+</%def>

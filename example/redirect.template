@@ -1,0 +1,4 @@
+<%
+response.set_cookie("redirected", "1")
+response.redirect("/")
+%>

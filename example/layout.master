@@ -1,0 +1,37 @@
+<%!
+from datetime import datetime
+x = datetime.now()
+y = 1
+%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>${self.title() if hasattr(self, 'title') else 'My Site'}</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 2rem;
+        }
+        header, footer {
+            background: #f4f4f4;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        ${x}
+        <h1>${self.header() if hasattr(self, 'header') else 'Welcome to My Site'}</h1>
+    </header>
+
+    <main>
+        ${self.content() if hasattr(self, 'content') else '<p>This is the default content.</p>'}
+    </main>
+
+    <footer>
+        ${self.footer() if hasattr(self, 'footer') else f'<p>&copy; {datetime.now().year} My Company</p>'}
+    </footer>
+</body>
+</html>

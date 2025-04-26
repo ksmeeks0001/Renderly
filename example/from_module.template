@@ -1,0 +1,19 @@
+<%inherit file="layout.master"/>
+<%!
+from mymodule import get_data
+%>
+
+<%def name="title()">
+    From Module
+</%def>
+
+<%def name="header()">
+    <h1>From Module</h1>
+</%def>
+
+<%def name="content()">
+    <%
+    data = get_data()
+    %>
+    <p>Hello, ${data['first_name']} ${data['last_name']}. You were added on ${data['created_at']}</p>
+</%def>

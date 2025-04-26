@@ -1,0 +1,17 @@
+<%inherit file="layout.master"/>
+
+
+<%def name="title()">
+    Home Page
+</%def>
+
+<%def name="header()">
+    <%
+    page_data = "Hello from derived page!"
+    %>
+    <h1>${page_data}</h1>
+</%def>
+
+<%def name="content()">
+    <p>This is the home page content.</p>
+</%def>
