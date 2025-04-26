@@ -1,6 +1,6 @@
 # Renderly
 
-**Renderly** is a minimalistic Python web framework built around [Mako templates](https://www.makotemplates.org/). With Rednerly, all you need to do is drop `.template` files in a directory — and your app is live. It’s perfect for small apps, prototypes, and template-driven workflows.
+**Renderly** is a minimalistic Python web framework built around [Mako templates](https://www.makotemplates.org/). With Renderly, all you need to do is drop `.template` files in a directory — and your app is live. It’s perfect for small apps, prototypes, and template-driven workflows.
 
 ---
 
