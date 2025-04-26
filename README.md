@@ -63,5 +63,5 @@ Then use `${version}` in your templates.
 If a requested template doesn’t exist, Renderly will render the fallback file (default: `404.template`).
 
 ---
-
+See the example folder for more usage.
 
