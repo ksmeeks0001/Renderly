@@ -26,23 +26,19 @@
 <p>Request method: ${request.method}</p>
 ```
 
-### Running the App (with uWSGI, for example)
-Instantiate a run.py
-```python
-application = App("My APP", project_dir="/templates")
-```
-
-```bash
-uwsgi --http :8000 --wsgi-file run.py --callable application
-```
-
-In `main.py`:
+In `run.py`:
 
 ```python
 from renderly import App
 
 application = App(name="Renderly Demo", project_dir="templates")
 ```
+## Run with uwsgi
+
+```bash
+uwsgi --http :8000 --wsgi-file run.py --callable application
+```
+
 
 ---
 
