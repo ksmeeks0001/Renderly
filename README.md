@@ -26,6 +26,10 @@
 <p>Request method: ${request.method}</p>
 ```
 
+```bash
+pip install renderly
+```
+
 In `run.py`:
 
 ```python
