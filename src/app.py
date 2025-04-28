@@ -18,10 +18,10 @@ class App:
         self.template_lookup = TemplateLookup(directories=[project_dir])
 
         if isinstance(app_context, dict):
-            self.app_context(app_context)
+            self.app_context = app_context
         elif isinstance(app_context, str):
             with open(app_context, 'r') as context_file:
-                self.jina_env.app_context.update(json.load(context_file))
+                self.app_context = json.load(context_file)
         else:
             self.app_context = {}
 
