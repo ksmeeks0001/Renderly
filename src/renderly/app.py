@@ -5,8 +5,8 @@ from mako.template import Template
 from mako.lookup import TemplateLookup
 from mako.exceptions import TopLevelLookupException
 
-from request import Request
-from response import Response
+from .request import Request
+from .response import Response
 
 class App:
 
